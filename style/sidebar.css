@@ -1,0 +1,142 @@
+:root {
+  --background-color-body: #0f0f0f;
+  --background-color-buttons: #222222;
+  --background-color-buttons-hover: #525252;
+  --color-text: #ffff;
+  --color-text-secundary: #989898;
+}
+
+#container {
+  display: flex;
+  width: 100%;
+}
+
+#navegation {
+  margin-top: 25px;
+  width: 240px;
+  height: 90vh;
+  overflow-y: scroll;
+  position: fixed;
+}
+
+#navegation::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+#navegation::-webkit-scrollbar-thumb {
+  background-color: var(--background-color-buttons-hover);
+}
+
+.home {
+  background-color: var(--background-color-buttons-hover);
+}
+
+.card-navegation-flex{
+  display: none;
+
+}
+
+.card-navegation {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 5px;
+  width: 220px;
+}
+
+.card-navegation > p {
+  margin-left: 25px;
+}
+
+.card-navegation:hover {
+  background-color: var(--background-color-buttons-hover);
+}
+
+.line {
+  width: 220px;
+  border: 0.1pt solid rgb(53, 52, 52);
+  margin: 10px 0 10px 0px;
+}
+
+.button-navegation {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 5px;
+  width: 220px;
+  background-color: transparent;
+  color: var(--color-text);
+  border: none;
+  font-size: 1em;
+}
+
+.button-navegation:hover {
+  background-color: var(--background-color-buttons-hover);
+}
+
+.button-navegation > p {
+  margin-left: 25px;
+}
+
+img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.subtitle-nav {
+  margin-bottom: 5px;
+}
+
+.nav-footer {
+  color: var(--color-text-secundary);
+  margin-bottom: 10px;
+  font-size: 0.8em;
+}
+
+@media (max-width: 1200px) {
+  .card-navegation {
+    display: none;
+  }
+
+  .line{
+    display: none;
+  }
+
+  .nav-footer{
+    display: none;
+  }
+
+  .subtitle-nav{
+    display: none;
+  }
+
+  .button-navegation{
+    display: none;
+  }
+
+  #navegation{
+    width: 80px;
+  }
+
+  .card-navegation-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   width: 70px; 
+   ;font-size: .8em;
+   height: 80px;
+   border-radius: 15px;
+
+  }
+
+  .card-navegation-flex:hover{
+    background-color: var(--background-color-buttons-hover);
+  }
+
+}

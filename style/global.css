@@ -1,0 +1,39 @@
+@import url("https://fonts.cdnfonts.com/css/youtube-sans");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "YouTube Sans Dark", sans-serif;
+}
+
+:root {
+  --background-color-body: #0f0f0f;
+  --background-color-buttons: #222222;
+  --background-color-buttons-hover: #525252;
+  --color-text: #ffff;
+  --color-text-secundary: #989898;
+}
+
+body {
+  margin: 0px 20px;
+  min-width: 630px;
+  background-color: var(--background-color-body);
+  color: var(--color-text);
+  overflow-y: hidden;
+  position: relative;
+  display: flex;
+  justify-content: left;
+  overflow-y: scroll;
+}
+
+header {
+  position: relative;
+  position: fixed;
+}
+
+#container {
+  position: relative;
+  position: absolute;
+  top: 50px;
+}
+

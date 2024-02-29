@@ -1,0 +1,167 @@
+:root {
+  --background-color-body: #0f0f0f;
+  --background-color-input: #121212;
+  --background-color-buttons: #222222;
+  --background-color-buttons-hover: #525252;
+  --color-text: #ffff;
+  --color-text-secundary: #989898;
+}
+
+header {
+  display: flex;
+  background-color: transparent;
+  width: 97%;
+  height: 50px;
+  padding-top: 5px;
+  background-color: var(--background-color-body);
+  z-index: 1;
+}
+
+.header-div1 {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: left;
+  align-items: center;
+  margin-right: 70px;
+}
+.h1-header {
+  font-size: 1.2em;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  background: transparent;
+  border: none;
+}
+
+.item-li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.buttons-header {
+  height: 40px;
+  width: 40px;
+  border: none;
+  background-color: transparent;
+  border-radius: 50%;
+  color: var(--color-text);
+}
+
+.buttons-header:hover {
+  background-color: var(--background-color-buttons-hover);
+}
+
+focus{
+  border-color: blue;
+}
+.logo-youtube {
+  width: 40px;
+  height: 40px;
+}
+
+.title-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.header-div2 {
+  display: flex;
+  flex: 5 1 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-header {
+  width: 60%;
+  height: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  background-color: transparent;
+  border: 1px solid var(--background-color-buttons);
+  color: var(--color-text);
+  padding: 20px;
+}
+
+
+.input-header::placeholder {
+  font-size: 1.2em;
+}
+
+.search-header {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  height: 40px;
+  width: 60px;
+  margin-right: 15px;
+  border: 2px solid var(--background-color-buttons);
+  background-color: var(--background-color-buttons);
+  color: var(--color-text);
+  z-index: -1;
+}
+
+.header-div3 {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: right;
+  align-items: center;
+  min-width: 70px;
+}
+
+.mic-header {
+  background-color: var(--background-color-buttons);
+}
+
+.video-header {
+  margin-left: 100px;
+}
+
+.Image-header {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 810px) {
+  .input-header {
+    width: 40%;
+    height: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 630px) {
+  .input-header {
+    display: none;
+  }
+
+  .item-li:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  .mic-header {
+    background-color: transparent;
+  }
+
+  .search-header {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+    background-color: transparent;
+    border: none;
+  }
+  .video-header {
+    margin-left: 10px;
+  }
+  .header-div2 {
+    display: flex;
+    flex: 5 1 auto;
+    align-items: center;
+    justify-content: right;
+    margin-right: -30px;
+  }
+}
